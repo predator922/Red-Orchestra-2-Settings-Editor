@@ -112,7 +112,7 @@ namespace ro2_settings_editor
 
         private List<config> convertIni(string[] raw)
         {
-            Char delimiter1 = '=';
+            char delimiter1 = '=';
             String[] rawWords;
             List<config> ini = new List<config>(); ;
             for (int i = 0; i < raw.Length; i++)
@@ -210,14 +210,14 @@ namespace ro2_settings_editor
 
         private void getVideoSettings()
         {
-            detailcombo.SelectedIndex = Int32.Parse(roengineP[684+g].Value);
-            chacombo.SelectedIndex = Int32.Parse(roengineP[754 + g].Value);
-            texcombo.SelectedIndex = Int32.Parse(roengineP[755 + g].Value);
-            shadowcombo.SelectedIndex = Int32.Parse(roengineP[756 + g].Value);
+            detailcombo.SelectedIndex = int.Parse(roengineP[684+g].Value);
+            chacombo.SelectedIndex = int.Parse(roengineP[754 + g].Value);
+            texcombo.SelectedIndex = int.Parse(roengineP[755 + g].Value);
+            shadowcombo.SelectedIndex = int.Parse(roengineP[756 + g].Value);
             aacombo.SelectedIndex = getAAQuality();
-            fxcombo.SelectedIndex = Int32.Parse(roengineP[760 + g].Value);
-            postcombo.SelectedIndex = Int32.Parse(roengineP[758 + g].Value);
-            lightcombo.SelectedIndex = Int32.Parse(roengineP[757 + g].Value);
+            fxcombo.SelectedIndex = int.Parse(roengineP[760 + g].Value);
+            postcombo.SelectedIndex = int.Parse(roengineP[758 + g].Value);
+            lightcombo.SelectedIndex = int.Parse(roengineP[757 + g].Value);
             greencombo.SelectedIndex = getFoliageQuality();
             ppCombo.SelectedIndex = getPPPquality();
             anisocombo.SelectedIndex = getAnisoQuality();
@@ -316,7 +316,7 @@ namespace ro2_settings_editor
                 }
                 else
                 {
-                    return Int32.Parse(roengineP[770 + g].Value) + 1 - (Int32.Parse(roengineP[770 + g].Value) / 3);
+                    return int.Parse(roengineP[770 + g].Value) + 1 - (int.Parse(roengineP[770 + g].Value) / 3);
                 }
             }
         }
