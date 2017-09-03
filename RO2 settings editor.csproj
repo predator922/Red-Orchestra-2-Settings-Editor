@@ -79,6 +79,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="model\Config.cs" />
+    <Compile Include="ui\main\IMainFormView.cs" />
     <Compile Include="ui\main\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>

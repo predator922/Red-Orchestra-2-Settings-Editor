@@ -7,7 +7,7 @@ using System.IO;
 namespace ro2_settings_editor
 {
 
-    public partial class MainForm : Form
+    public partial class MainForm : Form, IMainFormView
     {
         //DECLARATION
         private List<config> roengineP = new List<config>();
@@ -337,7 +337,7 @@ namespace ro2_settings_editor
                     k++;
                 }
                 File.WriteAllLines(@path, raw);
-                MessageBox.Show(iniName+" saved Successfully");
+                MessageBox.Show(iniName+" saved successfully");
             }
             catch (Exception ex)
             {
