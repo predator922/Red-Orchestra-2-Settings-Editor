@@ -78,29 +78,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Config.cs" />
-    <Compile Include="MainForm.cs">
+    <Compile Include="model\Config.cs" />
+    <Compile Include="ui\main\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainForm.Designer.cs">
+    <Compile Include="ui\main\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="AdvancedSettingsForm.cs">
+    <Compile Include="ui\main\AdvancedSettingsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AdvancedSettingsForm.Designer.cs">
+    <Compile Include="ui\main\AdvancedSettingsForm.Designer.cs">
       <DependentUpon>AdvancedSettingsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="IniNotInitializedException.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="MainForm.resx">
+    <Compile Include="ui\main\MainFormPresenter.cs" />
+    <EmbeddedResource Include="ui\main\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AdvancedSettingsForm.resx">
+    <EmbeddedResource Include="ui\main\AdvancedSettingsForm.resx">
       <DependentUpon>AdvancedSettingsForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AdvancedSettingsForm.yo-NG.resx">
+    <EmbeddedResource Include="ui\main\AdvancedSettingsForm.yo-NG.resx">
       <DependentUpon>AdvancedSettingsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
